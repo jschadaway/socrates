@@ -26,33 +26,46 @@
           </nested-form>
         </children>
       </grid>
-      <grid id="870ea" layout-manager="BorderLayout" hgap="0" vgap="10">
+      <splitpane id="98691">
         <constraints border-constraint="Center"/>
-        <properties/>
-        <border type="none"/>
-        <children>
-          <nested-form id="e6a18" form-file="io/breen/socrates/view/main/FileView.form" binding="fileView" custom-create="true">
-            <constraints border-constraint="Center"/>
-          </nested-form>
-        </children>
-      </grid>
-      <grid id="80877" layout-manager="BorderLayout" hgap="0" vgap="10">
-        <constraints border-constraint="East"/>
         <properties>
-          <maximumSize width="350" height="2147483647"/>
-          <minimumSize width="350" height="44"/>
-          <preferredSize width="350" height="406"/>
+          <resizeWeight value="1.0"/>
         </properties>
         <border type="none"/>
         <children>
-          <nested-form id="8adcb" form-file="io/breen/socrates/view/main/TestTree.form" binding="testTree" custom-create="true">
-            <constraints border-constraint="Center"/>
-          </nested-form>
-          <nested-form id="b4535" form-file="io/breen/socrates/view/main/TestControls.form" binding="testControls" custom-create="true">
-            <constraints border-constraint="South"/>
-          </nested-form>
+          <grid id="870ea" layout-manager="BorderLayout" hgap="0" vgap="10">
+            <constraints>
+              <splitpane position="left"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <nested-form id="e6a18" form-file="io/breen/socrates/view/main/FileView.form" binding="fileView" custom-create="true">
+                <constraints border-constraint="Center"/>
+              </nested-form>
+            </children>
+          </grid>
+          <grid id="80877" layout-manager="BorderLayout" hgap="0" vgap="10">
+            <constraints>
+              <splitpane position="right"/>
+            </constraints>
+            <properties>
+              <maximumSize width="500" height="2147483647"/>
+              <minimumSize width="350" height="44"/>
+              <preferredSize width="350" height="406"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <nested-form id="8adcb" form-file="io/breen/socrates/view/main/TestTree.form" binding="testTree" custom-create="true">
+                <constraints border-constraint="Center"/>
+              </nested-form>
+              <nested-form id="b4535" form-file="io/breen/socrates/view/main/TestControls.form" binding="testControls" custom-create="true">
+                <constraints border-constraint="South"/>
+              </nested-form>
+            </children>
+          </grid>
         </children>
-      </grid>
+      </splitpane>
     </children>
   </grid>
 </form>
