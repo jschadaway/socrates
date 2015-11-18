@@ -212,6 +212,7 @@ public class MainController {
         mainView.submissionTree.expandFirstSubmission();
 
         mainView.setVisible(true);
+        mainView.setExtendedState(mainView.getExtendedState() | JFrame.MAXIMIZED_BOTH);
     }
 
     public void saveGradeReport(SubmissionWrapperNode completed, Path dest) {
